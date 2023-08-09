@@ -1,1 +1,17 @@
 header.header
+    .header__container.container
+        .header__logo 
+            img(src="@img/Logo.svg" alt="Логотип LOREMIPSUM.NET" width="247" height="35")
+        .header__menu.menu
+            button.menu__button(type="button" aria-haspopup="true" aria-expanded="false")
+                span.menu__button-span(aria-hidden="true")
+            nav.menu__body
+                ul.menu__list 
+                    li.menu__list-item
+                        a.menu__list-item-link.link.link_active(href="#") Бизнес
+                    li.menu__list-item
+                        a.menu__list-item-link.link(href="#") О нас
+                    li.menu__list-item
+                        a.menu__list-item-link.link(href="#") Цены
+                    li.menu__list-item
+                        a.menu__list-item-link.link(href="#") Оформить заказ
