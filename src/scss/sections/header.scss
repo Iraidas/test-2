@@ -13,19 +13,9 @@
 }
 
 .menu {
-    &__button {
-    }
-    &__button-span {
-    }
-    &__button-text-bar {
-    }
-    &__body {
-    }
     &__list {
         display: flex;
         gap: 60px;
-    }
-    &__list-item {
     }
     &__list-item-link {
         text-transform: uppercase;
@@ -34,8 +24,6 @@
 
 @media screen and #{$tab-land} {
     .header {
-        &__container {
-        }
         &__logo {
             width: 200px;
             height: 35px;
@@ -48,46 +36,11 @@
     }
 }
 
-@media screen and #{$tab-port} {
-    .header {
-        &__container {
-        }
-        &__logo {
-        }
-        .menu {
-            &__button {
-            }
-            &__button-span {
-            }
-            &__button-text-bar {
-            }
-            &__body {
-            }
-            &__list {
-            }
-            &__list-item {
-            }
-            &__list-item-link {
-            }
-        }
-    }
-}
-
 @media screen and #{$mobile} {
     .header {
         &__container {
             padding-top: 22px;
             padding-bottom: 22px;
-        }
-        &__logo {
-        }
-        &__menu {
-        }
-        &__list {
-        }
-        &__list-item {
-        }
-        &__list-item-link {
         }
     }
 }
