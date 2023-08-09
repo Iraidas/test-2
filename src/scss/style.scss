@@ -1,0 +1,14 @@
+@import "fonts";
+@import "global";
+@import "reset";
+@import "vars";
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
