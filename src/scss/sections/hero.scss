@@ -1,0 +1,186 @@
+.hero {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;        
+        background: url('@img/hero_background.png') center 0 no-repeat;
+        background-size: cover !important;
+    }
+    &__container {
+        display: flex;
+        gap: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100vh;
+        padding-top: 109px;
+        min-height: 780px;
+        max-height: 930px;
+    }
+    &__title {
+        font-family: Lato, sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        color: black;
+    }
+    &__description-title {
+        font-family: Lato, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: black;
+        padding-bottom: 10px;
+    }
+    &__description-list {
+        list-style-type: "-" !important;
+    }
+    &__description-list-item {
+        font-family: Lato, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: black;
+        margin-left: 15px;
+        padding-left: 10px !important;
+    }
+    &__links {
+        display: flex;
+        gap: 30px;
+    }
+    &__link-order {
+        @include button;
+        color: white;
+        border: 1px solid white;
+        background: #3E9CDC;
+    }
+    &__link-more {
+        @include button;
+        color: #2A2B30;
+        border: 1px solid #6F6D7B;
+        background: white;
+    }
+    @media ($device-hover) and ($device-pointer) {
+        .hero__link-order {
+            &:hover,
+            &:focus, 
+            &:active {
+                background: #3495d5;
+                outline: none;
+                border-color: var(--dark-blue);
+            }
+        }
+        .hero__link-more {
+            &:hover,
+            &:focus, 
+            &:active {
+                background: rgb(230, 230, 230);
+                outline: none;
+                border-color: black;
+            }
+        }
+    }
+}
+
+.marker {
+    color: #3E9CDC;
+}
+
+@media screen and #{$tab-land} {
+    .hero {
+		&__container {
+            min-height: 680px;
+            max-height: 720px;
+            padding-top: 80px;
+		}
+		&__title {
+            font-size: 40px;
+		}
+		&__description-title {
+            font-size: 18px;
+		}
+		&__description-list-item {
+            font-size: 16px;
+		}
+    }   
+}
+
+@media screen and #{$tab-port} {
+    .hero {
+        &::before {     
+            background-position: left;
+        }
+		&__container {
+            min-height: 590px;
+            max-height: 652px;
+            padding-top: 80px;
+            gap: 50px;
+		}
+		&__title {
+            font-size: 38px;
+            .br-desktop {
+                display: none;
+            }
+		}
+		&__description-title {
+            font-size: 16px;
+		}
+		&__description-list-item {
+            font-size: 14px;
+		}
+		&__link-order,
+        &__link-more {
+            min-width: 153px;
+            max-width: 153px;
+		}
+    }   
+}
+
+@media screen and #{$mobile} {
+    .hero {
+		&__container {
+            min-height: 430px;
+            max-height: 502px;
+            gap: 30px;
+		}
+		&__title {
+            font-size: 27px;
+            max-width: 350px;
+		}
+		&__description {
+		}
+		&__description-title {
+		}
+		&__description-list {
+		}
+		&__description-list-item {
+		}
+		&__links {
+            flex-wrap: wrap;
+            gap: 15px 30px;
+		}
+		&__link-order {
+		}
+		&__link-more {
+		}
+    }   
+}
+
+@media screen and (max-width: 364px) {
+    .hero {
+		&__container {
+            min-height: 630px;
+            max-height: 662px;
+		}
+        &__title {
+            max-width: 280px;
+		}
+    }   
+}

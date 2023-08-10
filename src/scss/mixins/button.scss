@@ -1,0 +1,14 @@
+@mixin button {
+    font-family: Lato, sans-serif;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    min-width: 183px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    border-radius: 4px;
+}

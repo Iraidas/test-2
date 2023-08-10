@@ -137,63 +137,14 @@
 
 @media screen and (max-width: 821px) {
     .footer {
-		&__container {
-            
-		}
-		&__copy {
-		}
 		&__payment-list {
             padding-right: 0 !important;
             margin-right: 0;
-        }
-		&__payment-list-item {
         }
 		&__social-list {
             justify-content: center;
             width: 100%;
             margin-top: 40px;
-		}
-		&__social-list-item {
-		}
-		&__social-list-item-link {
-		}
-    }
-}
-
-@media screen and #{$tab-land} {
-    .footer {
-		&__container {
-		}
-		&__copy {
-		}
-		&__payment-list {
-		}
-		&__payment-list-item {
-		}
-		&__social-list {
-		}
-		&__social-list-item {
-		}
-		&__social-list-item-link {
-		}
-    }
-}
-
-@media screen and #{$tab-port} {
-    .footer {
-		&__container {
-		}
-		&__copy {
-		}
-		&__payment-list {
-		}
-		&__payment-list-item {
-		}
-		&__social-list {
-		}
-		&__social-list-item {
-		}
-		&__social-list-item-link {
 		}
     }
 }
@@ -213,8 +164,6 @@
             flex-direction: column;
             margin-right: 50px;
 		}
-		&__payment-list-item {
-        }
 		&__social-list {
             flex-direction: column;
             margin-bottom: auto;
@@ -222,32 +171,18 @@
             margin-top: 0;
             gap: 30px;
 		}
-		&__social-list-item {
-		}
-		&__social-list-item-link {
-		}
     }
 }
 
 @media screen and (max-width: 381px) {
     .footer {
-		&__container {
-		}
-		&__copy {
-		}
 		&__payment-list {
             margin-right: auto;
             margin-left: 15px;
 		}
-		&__payment-list-item {
-        }
 		&__social-list {
             margin-left: 15px;
             margin-right: auto;
-		}
-		&__social-list-item {
-		}
-		&__social-list-item-link {
 		}
     }
 }

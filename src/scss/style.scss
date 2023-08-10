@@ -1,12 +1,13 @@
 :root {
     --light-blue: #3E9CDC;
-    --dark-green: #286690;
+    --dark-blue: #286690;
 }
 
 @import "reset";
 @import "vars";
 @import "components";
 @import "global";
+@import "mixins";
 @import "fonts";
 
 @import "sections";
